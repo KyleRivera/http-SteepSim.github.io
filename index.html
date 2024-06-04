@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steep Turn Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div class="slider-container">
+            <label for="angleSlider">Bank Angle:</label>
+            <input type="range" id="angleSlider" min="-90" max="90" value="0">
+            <span id="angleDisplay">0</span> degrees
+        </div>
+        <div class="slider-container">
+            <label for="pitchSlider">Angle Of Attack:</label>
+            <input type="range" id="pitchSlider" min="0" max="40" value="0">
+            <span id="pitchDisplay">0</span> degrees
+        </div>
+            <span id="loadFactorDisplay">Load Factor: 1.00</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

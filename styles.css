@@ -1,0 +1,70 @@
+body {
+    background-color: #121212; /* Dark background for less strain */
+    color: #fff; /* White text for high contrast */
+    font-family: 'Arial', sans-serif; /* Modern, readable font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+#container {
+    width: 90%;
+    max-width: 800px; /* Maximum width of the container */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    background-color: #242424; /* Slightly lighter dark shade for the container */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+    text-align: center;
+}
+
+canvas {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    background-color: #333; /* Darker background for the canvas */
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    margin: 10px 0; /* Space between sliders */
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Overrides default browser styles */
+    appearance: none;
+    width: 100%; /* Full width */
+    height: 8px; /* Thinner track */
+    border-radius: 5px; /* Rounded edges on the track */
+    background: #444; /* Darker background for the slider track */
+    outline: none; /* Removes outline */
+    padding: 0;
+    margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Width of the thumb */
+    height: 20px; /* Height of the thumb */
+    border-radius: 50%; /* Circular thumb */
+    background: #7BC8F6; /* Green thumb for a pop of color */
+    cursor: pointer; /* Indicates that the thumb is draggable */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #7BC8F6;
+    cursor: pointer;
+}
+
+#loadFactorDisplay {
+    display: block; /* Ensures it appears on a new line */
+    font-size: 1.25em; /* Larger text for readability */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 20px; /* Spacing above the display */
+    color: #4CAF50; /* Green text to match the slider thumb */
+}
